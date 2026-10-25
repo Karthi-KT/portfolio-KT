@@ -1,0 +1,149 @@
+{
+  "lmsHighlights": [
+    {
+      "title": "Role-Based Hierarchy",
+      "icon": "FaUserShield",
+      "description": "Super Admin, Admin, Learner – clean, scoped roles. Admins vary in power but use one label for simplicity and clarity."
+    },
+    {
+      "title": "Delegated Power",
+      "icon": "FaCrown",
+      "description": "Super Admins don't create users. Designed for smart delegation — not micromanagement."
+    },
+    {
+      "title": "Real-Time Code Compiler",
+      "icon": "FaCode",
+      "description": "Integrated Judge0 API to support multiple programming languages and allow learners to write, compile, and execute code in real-time."
+    },
+    {
+      "title": "Colleges & Departments",
+      "icon": "FaUniversity",
+      "description": "Supports multiple colleges and departments with a clean structure for navigation and assignment control."
+    },
+    {
+      "title": "Dynamic Batch System",
+      "icon": "FaLayerGroup",
+      "description": "Group students from different departments into batches for specialized training programs or short-term courses."
+    },
+    {
+      "title": "Smart Assessments",
+      "icon": "FaFileAlt",
+      "description": "Admin-level test assignment flexibility: by department, batch, or individual student. Precision targeting for evaluations."
+    },
+    {
+      "title": "Academic Tracking",
+      "icon": "FaChartLine",
+      "description": "Training and assessments are linked to auto-generate detailed academic reports."
+    },
+    {
+      "title": "Activity Visibility",
+      "icon": "FaEye",
+      "description": "Track logins, failed attempts, tests taken — no student activity goes unnoticed."
+    },
+    {
+      "title": "Custom Dashboards",
+      "icon": "FaThLarge",
+      "description": "Widget-based dashboards tailored to user roles. Add, remove, or reorder components as needed."
+    },
+    {
+      "title": "Visual Reports",
+      "icon": "FaChartPie",
+      "description": "Academic data visualized through charts and tables. Exportable for external analytics or audits."
+    },
+    {
+      "title": "Bulk Communication",
+      "icon": "FaBullhorn",
+      "description": "Send announcements and notifications at scale to learners and admins. Keeps everyone in sync."
+    }
+  ],
+  "techStack": [
+    {
+      "name": "React.js",
+      "icon": "FaReact",
+      "description": "Frontend UI library"
+    },
+    {
+      "name": "Node.js",
+      "icon": "FaServer",
+      "description": "Backend API server"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "FaDatabase",
+      "description": "NoSQL database"
+    },
+    {
+      "name": "Responsive Design",
+      "icon": "FaMobileAlt",
+      "description": "Mobile-first approach"
+    },
+    {
+      "name": "Judge0 API",
+      "icon": "FaCode",
+      "description": "Code compilation service"
+    },
+    {
+      "name": "GitHub CI/CD",
+      "icon": "FaGithub",
+      "description": "Continuous integration"
+    }
+  ],
+  "useCases": [
+    {
+      "role": "Super Admin",
+      "icon": "FaCrown",
+      "actions": [
+        "Create colleges and departments",
+        "Assign admins to institutions",
+        "Monitor system-wide metrics",
+        "Define global assessment parameters"
+      ]
+    },
+    {
+      "role": "Admin",
+      "icon": "FaUserShield",
+      "actions": [
+        "Manage students within departments",
+        "Create batches and assign learners",
+        "Design and deploy assessments",
+        "Generate performance reports"
+      ]
+    },
+    {
+      "role": "Learner",
+      "icon": "FaLaptopCode",
+      "actions": [
+        "Complete assigned coursework",
+        "Participate in coding exercises",
+        "Take assessments and view results",
+        "Track personal academic progress"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "title": "Admin Dashboard",
+      "description": "Complete overview of system metrics and activity",
+      "device": "FaDesktop",
+      "color": "bg-zeton-blue"
+    },
+    {
+      "title": "Code Compiler",
+      "description": "Real-time code editing and execution environment",
+      "device": "FaLaptopCode",
+      "color": "bg-zeton-red"
+    },
+    {
+      "title": "Student Progress",
+      "description": "Detailed academic tracking and visualization",
+      "device": "FaTabletAlt",
+      "color": "bg-slate-blue"
+    },
+    {
+      "title": "Mobile Experience",
+      "description": "Fully responsive design for learning on-the-go",
+      "device": "FaMobileAlt",
+      "color": "bg-coral-tint"
+    }
+  ]
+}

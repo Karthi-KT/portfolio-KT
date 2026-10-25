@@ -1,0 +1,294 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Spacing */
+    --spacing-logo-clearspace: 100px;
+    --spacing-navbar-height: 64px;
+
+    /* Fonts */
+    --font-primary: "Onest", sans-serif;
+    --font-secondary: "Space Grotesk", sans-serif;
+
+    /* Primary Colors */
+    --color-zeton-blue: #1E3561;
+    --color-zeton-red: #E63947;
+
+    /* Secondary Colors */
+    --color-soft-gray: #B0B7C3;
+    --color-cool-white: #F4F6F9;
+    --color-slate-blue: #3A506B;
+    --color-coral-tint: #F98B88;
+
+    /* Light Mode Colors */
+    --color-light-primary: var(--color-zeton-blue);
+    --color-light-secondary: var(--color-zeton-red);
+    --color-light-background: var(--color-cool-white);
+    --color-light-surface: #ffffff;
+    --color-light-text-primary: var(--color-zeton-blue);
+    --color-light-text-secondary: var(--color-slate-blue);
+    --color-light-text-muted: var(--color-soft-gray);
+    --color-light-border: var(--color-soft-gray);
+
+    /* Dark Mode Colors */
+    --color-dark-primary: var(--color-zeton-blue);
+    --color-dark-secondary: var(--color-zeton-red);
+    --color-dark-background: #1A1F2E;
+    --color-dark-surface: #2A324A;
+    --color-dark-text-primary: #ffffff;
+    --color-dark-text-secondary: var(--color-cool-white);
+    --color-dark-text-muted: var(--color-soft-gray);
+    --color-dark-border: var(--color-slate-blue);
+
+    /* Gradients */
+    --background-light-gradient: linear-gradient(to bottom right, var(--color-cool-white), #ffffff);
+    --background-dark-gradient: linear-gradient(to bottom right, #1A1F2E, var(--color-zeton-blue));
+    --accent-gradient: linear-gradient(to right, var(--color-zeton-blue), var(--color-zeton-red));
+  }
+
+  .dark {
+    --color-primary: var(--color-dark-primary);
+    --color-secondary: var(--color-dark-secondary);
+    --color-background: var(--color-dark-background);
+    --color-surface: var(--color-dark-surface);
+    --color-text-primary: var(--color-dark-text-primary);
+    --color-text-secondary: var(--color-dark-text-secondary);
+    --color-text-muted: var(--color-dark-text-muted);
+    --color-border: var(--color-dark-border);
+    --background-gradient: var(--background-dark-gradient);
+  }
+
+  :root {
+    --color-primary: var(--color-light-primary);
+    --color-secondary: var(--color-light-secondary);
+    --color-background: var(--color-light-background);
+    --color-surface: var(--color-light-surface);
+    --color-text-primary: var(--color-light-text-primary);
+    --color-text-secondary: var(--color-light-text-secondary);
+    --color-text-muted: var(--color-light-text-muted);
+    --color-border: var(--color-light-border);
+    --background-gradient: var(--background-light-gradient);
+  }
+
+  /* Typography Base Styles */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    /* Onest Bold for headings */
+    color: var(--color-text-primary);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  h6 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  p,
+  span,
+  div,
+  li,
+  a {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    /* Onest Regular for body */
+    color: var(--color-text-primary);
+  }
+}
+
+@layer utilities {
+
+  /* Background Utilities */
+  .bg-zeton-blue {
+    background-color: var(--color-zeton-blue);
+    color: white;
+  }
+
+  .bg-zeton-red {
+    background-color: var(--color-zeton-red);
+    color: white;
+  }
+
+  .bg-soft-gray {
+    background-color: var(--color-soft-gray);
+  }
+
+  .bg-cool-white {
+    background-color: var(--color-cool-white);
+  }
+
+  .bg-slate-blue {
+    background-color: var(--color-slate-blue);
+    color: white;
+  }
+
+  .bg-coral-tint {
+    background-color: var(--color-coral-tint);
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary);
+    color: white;
+  }
+
+  .bg-secondary {
+    background-color: var(--color-secondary);
+    color: white;
+  }
+
+  .bg-surface {
+    background-color: var(--color-surface);
+  }
+
+  .bg-background {
+    background-color: var(--color-background);
+  }
+
+  .bg-gradient {
+    background: var(--background-gradient);
+  }
+
+  .bg-accent-gradient {
+    background: var(--accent-gradient);
+    color: white;
+  }
+
+  /* Text Color Utilities */
+  .text-zeton-blue {
+    color: var(--color-zeton-blue);
+  }
+
+  .text-zeton-red {
+    color: var(--color-zeton-red);
+  }
+
+  .text-soft-gray {
+    color: var(--color-soft-gray);
+  }
+
+  .text-slate-blue {
+    color: var(--color-slate-blue);
+  }
+
+  .text-cool-white {
+    color: var(--color-cool-white);
+  }
+
+  .text-coral-tint {
+    color: var(--color-coral-tint);
+  }
+
+  .text-primary {
+    color: var(--color-text-primary);
+  }
+
+  .text-secondary {
+    color: var(--color-text-secondary);
+  }
+
+  .text-muted {
+    color: var(--color-text-muted);
+  }
+
+  /* Border Utilities */
+  .border-zeton-blue {
+    border-color: var(--color-zeton-blue);
+  }
+
+  .border-zeton-red {
+    border-color: var(--color-zeton-red);
+  }
+
+  .border-soft-gray {
+    border-color: var(--color-soft-gray);
+  }
+
+  .border-slate-blue {
+    border-color: var(--color-slate-blue);
+  }
+
+  .border-primary {
+    border-color: var(--color-primary);
+  }
+
+  .border-secondary {
+    border-color: var(--color-secondary);
+  }
+
+  .border-muted {
+    border-color: var(--color-border);
+  }
+
+  /* Font Utilities */
+  .font-onest {
+    font-family: var(--font-primary);
+  }
+
+  .font-space-grotesk {
+    font-family: var(--font-secondary);
+  }
+
+  .font-heading {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    /* Onest Bold */
+  }
+
+  .font-subheading {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    /* Onest Medium */
+  }
+
+  .font-subheading-alt {
+    font-family: var(--font-secondary);
+    /* Space Grotesk */
+    font-weight: 500;
+  }
+
+  .font-body {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    /* Onest Regular */
+  }
+
+  .font-body-light {
+    font-family: var(--font-primary);
+    font-weight: 300;
+    /* Onest Light */
+  }
+
+  /* Logo Clear Space Utility */
+  .logo-clearspace {
+    padding: var(--spacing-logo-clearspace);
+  }
+}
