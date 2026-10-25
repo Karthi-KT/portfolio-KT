@@ -11,21 +11,21 @@ const About = () => {
 
   const hobbies = [
     {
-      imgSrc: "/Memes.png",
+      imgSrc: `${import.meta.env.BASE_URL}Memes.png`,
       title: "Meme Creator",
       badge: "Humor in Learning",
       description:
         "Teaching through humor is the ultimate joy. Adapting to modern trends and creating memes to deliver technical concepts keeps both me and my students deeply engaged with the subject.",
     },
     {
-      imgSrc: "/cards.png",
+      imgSrc: `${import.meta.env.BASE_URL}cards.png`,
       title: "Fun with Playing Cards",
       badge: "Math & Logic",
       description:
         "Combining card tricks with mathematical concepts. Developed an intuitive framework to explain complex Modular Arithmetic theorems using playing cards.",
     },
     {
-      imgSrc: "/writing.jpg",
+      imgSrc: `${import.meta.env.BASE_URL}writing.jpg`,
       title: "Storytelling & Writing",
       badge: "Empathy & Expression",
       description:

@@ -51,7 +51,7 @@ const Home = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-accent-gradient rounded-full blur-md opacity-20 transform scale-110"></div>
             <img
-              src="/KT-DP.jpg"
+              src={`${import.meta.env.BASE_URL}KT-DP.jpg`}
               alt="Karthikeyan T"
               className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-zeton-blue shadow-lg"
             />
